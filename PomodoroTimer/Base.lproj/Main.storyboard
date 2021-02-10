@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e6a-2B-7eB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Starting View Controller-->
+        <scene sceneID="bcX-v4-p6L">
+            <objects>
+                <viewController id="e6a-2B-7eB" customClass="StartingViewController" customModule="PomodoroTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f0A-cF-H8P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pomodoro Timer (2)" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-gh-TzL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TgZ-nU-xqa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="553"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAe-zQ-pNV" userLabel="TopView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="183.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomodoro Timer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="0IZ-gp-mxb">
+                                                <rect key="frame" x="75" y="68" width="264.5" height="48"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="highlightedColor" red="0.9882352941176471" green="0.97254901960784312" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="0IZ-gp-mxb" firstAttribute="centerX" secondItem="AAe-zQ-pNV" secondAttribute="centerX" id="kmL-ja-pCx"/>
+                                            <constraint firstItem="0IZ-gp-mxb" firstAttribute="centerY" secondItem="AAe-zQ-pNV" secondAttribute="centerY" id="sa4-7J-hKl"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xuV-mQ-yOh">
+                                        <rect key="frame" x="0.0" y="184.5" width="414" height="184"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kW4-po-n2S" userLabel="SecondView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to work !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6td-xl-T6N">
+                                                        <rect key="frame" x="117" y="25.5" width="180.5" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="6td-xl-T6N" firstAttribute="centerY" secondItem="kW4-po-n2S" secondAttribute="centerY" id="PO9-49-yGW"/>
+                                                    <constraint firstItem="6td-xl-T6N" firstAttribute="centerX" secondItem="kW4-po-n2S" secondAttribute="centerX" id="qif-io-2yU"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSs-By-oQ2" userLabel="ThirdView">
+                                                <rect key="frame" x="0.0" y="97" width="414" height="87"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What task to accomplish today ?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DgT-N1-hLN">
+                                                        <rect key="frame" x="65" y="30.5" width="284" height="25.5"/>
+                                                        <color key="textColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="DgT-N1-hLN" firstAttribute="centerY" secondItem="VSs-By-oQ2" secondAttribute="centerY" id="d7M-n9-OHY"/>
+                                                    <constraint firstItem="DgT-N1-hLN" firstAttribute="centerX" secondItem="VSs-By-oQ2" secondAttribute="centerX" id="y22-cd-MNo"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pL8-4n-eel" userLabel="BottomView">
+                                        <rect key="frame" x="0.0" y="369.5" width="414" height="183.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyT-zH-SYU">
+                                                <rect key="frame" x="57" y="66.5" width="300" height="50"/>
+                                                <color key="backgroundColor" red="1" green="0.4823529411764706" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="300" id="XlP-im-GPo"/>
+                                                    <constraint firstAttribute="height" constant="50" id="n2D-Rv-wYP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="nextBtnPressed:" destination="e6a-2B-7eB" eventType="touchUpInside" id="VFV-KH-ofT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="xyT-zH-SYU" firstAttribute="centerY" secondItem="pL8-4n-eel" secondAttribute="centerY" id="AMw-2k-iAo"/>
+                                            <constraint firstItem="xyT-zH-SYU" firstAttribute="centerX" secondItem="pL8-4n-eel" secondAttribute="centerX" id="LkQ-Je-ezu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fmb-uc-uwJ"/>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.97647058819999999" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fmb-uc-uwJ" firstAttribute="bottom" secondItem="TgZ-nU-xqa" secondAttribute="bottom" constant="265" id="CcA-07-EfT"/>
+                            <constraint firstItem="TgZ-nU-xqa" firstAttribute="top" secondItem="fmb-uc-uwJ" secondAttribute="top" id="SOg-Yu-sqJ"/>
+                            <constraint firstItem="TgZ-nU-xqa" firstAttribute="leading" secondItem="fmb-uc-uwJ" secondAttribute="leading" id="Xne-0L-ds8"/>
+                            <constraint firstItem="TgZ-nU-xqa" firstAttribute="trailing" secondItem="fmb-uc-uwJ" secondAttribute="trailing" id="iHk-vV-sRD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="xyT-zH-SYU" id="KdG-MZ-Us2"/>
+                        <outlet property="workTextField" destination="DgT-N1-hLN" id="r2t-fZ-DY1"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToTimer" id="8eL-ug-iTS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Il-jf-2fV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-784.05797101449286" y="83.705357142857139"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TimerViewController" customModule="PomodoroTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yen-QT-wSt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gG5-zz-iyf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="262.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHK-cS-5lA" userLabel="TopView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="131.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomodoro Timer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="FcD-pW-PEw">
+                                                        <rect key="frame" x="131.5" y="52" width="151" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="FcD-pW-PEw" firstAttribute="centerY" secondItem="EHK-cS-5lA" secondAttribute="centerY" id="BME-of-ES4"/>
+                                                    <constraint firstItem="FcD-pW-PEw" firstAttribute="centerX" secondItem="EHK-cS-5lA" secondAttribute="centerX" id="DTL-6c-CJy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bt-v1-3Ud" userLabel="SecondView">
+                                                <rect key="frame" x="0.0" y="131.5" width="414" height="131"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="pOW-zB-wh0">
+                                                        <rect key="frame" x="134" y="42" width="146" height="47"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="pOW-zB-wh0" firstAttribute="centerY" secondItem="4bt-v1-3Ud" secondAttribute="centerY" id="1XL-GO-IYP"/>
+                                                    <constraint firstItem="pOW-zB-wh0" firstAttribute="centerX" secondItem="4bt-v1-3Ud" secondAttribute="centerX" id="ZSh-vU-x2K"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="enb-A5-5RK">
+                                        <rect key="frame" x="0.0" y="272.5" width="414" height="263"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCa-zo-DYs" userLabel="ThirdView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="81"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="P5x-Sk-5dY">
+                                                        <rect key="frame" x="143" y="22.5" width="128" height="36"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcp-Kr-a4W">
+                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="36"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="tintColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" title="Work">
+                                                                    <color key="titleColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="sessionChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6wk-rV-fjc"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0f-An-owj">
+                                                                <rect key="frame" x="76" y="0.0" width="52" height="36"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <color key="tintColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <state key="normal" title="Break">
+                                                                    <color key="titleColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="sessionChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qI9-H9-Imf"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="P5x-Sk-5dY" firstAttribute="centerY" secondItem="aCa-zo-DYs" secondAttribute="centerY" id="Ff2-5S-THi"/>
+                                                    <constraint firstItem="P5x-Sk-5dY" firstAttribute="centerX" secondItem="aCa-zo-DYs" secondAttribute="centerX" id="Q4m-5r-0XT"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-op-rmB" userLabel="FourthView">
+                                                <rect key="frame" x="0.0" y="91" width="414" height="81"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QW-31-kAc">
+                                                        <rect key="frame" x="162.5" y="-6" width="89" height="93.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="3QW-31-kAc" firstAttribute="centerX" secondItem="2bA-op-rmB" secondAttribute="centerX" id="3fr-DV-bqo"/>
+                                                    <constraint firstItem="3QW-31-kAc" firstAttribute="centerY" secondItem="2bA-op-rmB" secondAttribute="centerY" id="Mtl-SI-2dS"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pY-dD-BuS" userLabel="FifthView">
+                                                <rect key="frame" x="0.0" y="182" width="414" height="81"/>
+                                                <subviews>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aVu-WN-lvz">
+                                                        <rect key="frame" x="57" y="35.5" width="300" height="11"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="tintColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="300" id="TnQ-ek-vbX"/>
+                                                            <constraint firstAttribute="height" constant="10" id="wTB-Eq-oQp"/>
+                                                        </constraints>
+                                                    </progressView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="aVu-WN-lvz" firstAttribute="centerY" secondItem="8pY-dD-BuS" secondAttribute="centerY" id="3Hz-pN-a6s"/>
+                                                    <constraint firstItem="aVu-WN-lvz" firstAttribute="centerX" secondItem="8pY-dD-BuS" secondAttribute="centerX" id="ldF-X7-If0"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igg-38-ZiW" userLabel="BottomView">
+                                        <rect key="frame" x="0.0" y="545.5" width="414" height="262.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="URh-4Y-qL6">
+                                                <rect key="frame" x="57" y="76" width="300" height="110"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SO5-BA-hlr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                                        <color key="backgroundColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="300" id="4Tk-Zi-5ZC"/>
+                                                            <constraint firstAttribute="height" constant="50" id="jNI-If-Jzl"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Start">
+                                                            <color key="titleColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKo-ko-I2H"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfl-p3-StR">
+                                                        <rect key="frame" x="0.0" y="60" width="300" height="50"/>
+                                                        <color key="backgroundColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="300" id="405-VO-HZr"/>
+                                                            <constraint firstAttribute="height" constant="50" id="vVh-az-QH7"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Complete">
+                                                            <color key="titleColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="completePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yI9-K3-Pxk"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="URh-4Y-qL6" firstAttribute="centerX" secondItem="Igg-38-ZiW" secondAttribute="centerX" id="RSq-bY-AUQ"/>
+                                            <constraint firstItem="URh-4Y-qL6" firstAttribute="centerY" secondItem="Igg-38-ZiW" secondAttribute="centerY" id="tl7-ri-gZ3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.97254901959999995" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yen-QT-wSt" secondAttribute="trailing" id="229-1B-dlO"/>
+                            <constraint firstItem="yen-QT-wSt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Hxy-Iq-hOC"/>
+                            <constraint firstItem="yen-QT-wSt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OTG-5w-9LC"/>
+                            <constraint firstItem="yen-QT-wSt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PeO-zz-6Y6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4rB-Bx-JH2"/>
+                    <connections>
+                        <outlet property="breakBtn" destination="K0f-An-owj" id="yTs-YS-mC1"/>
+                        <outlet property="completeBtn" destination="lfl-p3-StR" id="do2-69-uGg"/>
+                        <outlet property="startBtn" destination="SO5-BA-hlr" id="bCf-Dt-SEb"/>
+                        <outlet property="taskLabel" destination="pOW-zB-wh0" id="qkh-58-nLw"/>
+                        <outlet property="timerLabel" destination="3QW-31-kAc" id="CHt-Yk-yaq"/>
+                        <outlet property="timerProgressBar" destination="aVu-WN-lvz" id="ZBZ-QP-OzR"/>
+                        <outlet property="workBtn" destination="jcp-Kr-a4W" id="phI-nf-qdW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pomodoro Timer (2)" width="250" height="541"/>
+    </resources>
+</document>
