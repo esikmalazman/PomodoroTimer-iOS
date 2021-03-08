@@ -124,9 +124,10 @@ class TimerViewController: UIViewController
     @IBAction func completePressed(_ sender: UIButton)
     {
         timerProgressBar.progress = 0
-        taskLabel.text = ""
+        
         timer.invalidate()
         self.dismiss(animated: true, completion: nil)
+        taskLabel.text = ""
     }
     
     @objc func timerUpdate()

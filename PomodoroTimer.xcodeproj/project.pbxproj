@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		7F242FA625D3EF8600F672C6 /* CountdownTimer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F242FA525D3EF8600F672C6 /* CountdownTimer.mp3 */; };
-		7F57EE5F25D11A2200FB60EF /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F57EE5E25D11A2200FB60EF /* StartingViewController.swift */; };
+		7F57EE5F25D11A2200FB60EF /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F57EE5E25D11A2200FB60EF /* TaskViewController.swift */; };
 		7FCAA3DD25D0178600B1EE41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAA3DC25D0178600B1EE41 /* AppDelegate.swift */; };
 		7FCAA3DF25D0178600B1EE41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAA3DE25D0178600B1EE41 /* SceneDelegate.swift */; };
 		7FCAA3E125D0178600B1EE41 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCAA3E025D0178600B1EE41 /* TimerViewController.swift */; };
 		7FCAA3E425D0178600B1EE41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCAA3E225D0178600B1EE41 /* Main.storyboard */; };
 		7FCAA3E625D0178700B1EE41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCAA3E525D0178700B1EE41 /* Assets.xcassets */; };
 		7FCAA3E925D0178700B1EE41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCAA3E725D0178700B1EE41 /* LaunchScreen.storyboard */; };
+		7FEC982625E35159003EB328 /* TimerBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEC982525E35159003EB328 /* TimerBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F242FA525D3EF8600F672C6 /* CountdownTimer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CountdownTimer.mp3; sourceTree = "<group>"; };
-		7F57EE5E25D11A2200FB60EF /* StartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
+		7F57EE5E25D11A2200FB60EF /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		7FCAA3D925D0178600B1EE41 /* PomodoroTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCAA3DC25D0178600B1EE41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FCAA3DE25D0178600B1EE41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		7FCAA3E525D0178700B1EE41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FCAA3E825D0178700B1EE41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FCAA3EA25D0178700B1EE41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FEC982525E35159003EB328 /* TimerBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,16 +71,33 @@
 			isa = PBXGroup;
 			children = (
 				7FCAA3DC25D0178600B1EE41 /* AppDelegate.swift */,
-				7F57EE5E25D11A2200FB60EF /* StartingViewController.swift */,
+				7FEC982925E3515E003EB328 /* Model */,
+				7FEC982325E35129003EB328 /* Controller */,
 				7F242FA825D3EF9B00F672C6 /* Sounds */,
 				7FCAA3DE25D0178600B1EE41 /* SceneDelegate.swift */,
-				7FCAA3E025D0178600B1EE41 /* TimerViewController.swift */,
 				7FCAA3E225D0178600B1EE41 /* Main.storyboard */,
 				7FCAA3E525D0178700B1EE41 /* Assets.xcassets */,
 				7FCAA3E725D0178700B1EE41 /* LaunchScreen.storyboard */,
 				7FCAA3EA25D0178700B1EE41 /* Info.plist */,
 			);
 			path = PomodoroTimer;
+			sourceTree = "<group>";
+		};
+		7FEC982325E35129003EB328 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7FCAA3E025D0178600B1EE41 /* TimerViewController.swift */,
+				7F57EE5E25D11A2200FB60EF /* TaskViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7FEC982925E3515E003EB328 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7FEC982525E35159003EB328 /* TimerBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +173,9 @@
 			files = (
 				7FCAA3E125D0178600B1EE41 /* TimerViewController.swift in Sources */,
 				7FCAA3DD25D0178600B1EE41 /* AppDelegate.swift in Sources */,
-				7F57EE5F25D11A2200FB60EF /* StartingViewController.swift in Sources */,
+				7F57EE5F25D11A2200FB60EF /* TaskViewController.swift in Sources */,
 				7FCAA3DF25D0178600B1EE41 /* SceneDelegate.swift in Sources */,
+				7FEC982625E35159003EB328 /* TimerBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
