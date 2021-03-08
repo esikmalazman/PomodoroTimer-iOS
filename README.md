@@ -14,8 +14,10 @@ a simple pomodoro timer develop with swift programming language
 # Version 1.1
 1. Bug Fix (App allow user to continue to another screen without a task)
 2. Refactor Code & update UI
+3. Fix background layout for iPad
 
 
 # Future Updates
 
-1. Fix background layout for iPad
+1. Roundings
+
