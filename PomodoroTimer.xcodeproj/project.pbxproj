@@ -51,6 +51,14 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		7F98DE5825F5C75D007A3576 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7FCAA3E225D0178600B1EE41 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7FCAA3D025D0178600B1EE41 = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +83,7 @@
 				7FEC982325E35129003EB328 /* Controller */,
 				7F242FA825D3EF9B00F672C6 /* Sounds */,
 				7FCAA3DE25D0178600B1EE41 /* SceneDelegate.swift */,
-				7FCAA3E225D0178600B1EE41 /* Main.storyboard */,
+				7F98DE5825F5C75D007A3576 /* View */,
 				7FCAA3E525D0178700B1EE41 /* Assets.xcassets */,
 				7FCAA3E725D0178700B1EE41 /* LaunchScreen.storyboard */,
 				7FCAA3EA25D0178700B1EE41 /* Info.plist */,

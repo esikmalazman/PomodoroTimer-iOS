@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e6a-2B-7eB">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="e6a-2B-7eB" customClass="TaskViewController" customModule="PomodoroTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f0A-cF-H8P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pomodoro Timer (2)" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-gh-TzL">
@@ -20,13 +20,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TgZ-nU-xqa">
-                                <rect key="frame" x="0.0" y="44" width="414" height="553"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="471"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAe-zQ-pNV" userLabel="TopView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="183.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="156.33333333333334"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomodoro Timer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="0IZ-gp-mxb">
-                                                <rect key="frame" x="75" y="68" width="264.5" height="48"/>
+                                                <rect key="frame" x="75" y="54.333333333333343" width="264.33333333333331" height="48"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="35"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="highlightedColor" red="0.9882352941176471" green="0.97254901960784312" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
@@ -38,14 +38,14 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xuV-mQ-yOh">
-                                        <rect key="frame" x="0.0" y="184.5" width="414" height="184"/>
+                                        <rect key="frame" x="0.0" y="157.33333333333331" width="414" height="156.33333333333331"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kW4-po-n2S" userLabel="SecondView">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="73.333333333333329"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to work !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6td-xl-T6N">
-                                                        <rect key="frame" x="117" y="25.5" width="180.5" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time to work !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="6td-xl-T6N">
+                                                        <rect key="frame" x="111.33333333333333" y="16" width="191.66666666666669" height="41"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -56,12 +56,12 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSs-By-oQ2" userLabel="ThirdView">
-                                                <rect key="frame" x="0.0" y="97" width="414" height="87"/>
+                                                <rect key="frame" x="0.0" y="83.333333333333314" width="414" height="73"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="What task to accomplish today ?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DgT-N1-hLN">
-                                                        <rect key="frame" x="65" y="30.5" width="284" height="25.5"/>
+                                                        <rect key="frame" x="62.666666666666657" y="22.000000000000028" width="289" height="29"/>
                                                         <color key="textColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="next"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
@@ -78,10 +78,10 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pL8-4n-eel" userLabel="BottomView">
-                                        <rect key="frame" x="0.0" y="369.5" width="414" height="183.5"/>
+                                        <rect key="frame" x="0.0" y="314.66666666666669" width="414" height="156.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyT-zH-SYU">
-                                                <rect key="frame" x="57" y="66.5" width="300" height="50"/>
+                                                <rect key="frame" x="57" y="53.333333333333314" width="300" height="50"/>
                                                 <color key="backgroundColor" red="1" green="0.4823529411764706" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="XlP-im-GPo"/>
@@ -128,20 +128,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TimerViewController" customModule="PomodoroTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yen-QT-wSt">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gG5-zz-iyf">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="262.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHK-cS-5lA" userLabel="TopView">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="131.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomodoro Timer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="FcD-pW-PEw">
-                                                        <rect key="frame" x="131.5" y="52" width="151" height="27.5"/>
+                                                        <rect key="frame" x="131.66666666666666" y="44.333333333333336" width="150.99999999999997" height="27.333333333333336"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -153,11 +153,11 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bt-v1-3Ud" userLabel="SecondView">
-                                                <rect key="frame" x="0.0" y="131.5" width="414" height="131"/>
+                                                <rect key="frame" x="0.0" y="116" width="414" height="116"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="pOW-zB-wh0">
-                                                        <rect key="frame" x="134" y="42" width="146" height="47"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                                        <rect key="frame" x="132.33333333333337" y="30.666666666666654" width="149.66666666666663" height="54.666666666666657"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -170,17 +170,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="enb-A5-5RK">
-                                        <rect key="frame" x="0.0" y="272.5" width="414" height="263"/>
+                                        <rect key="frame" x="0.0" y="242" width="414" height="232"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCa-zo-DYs" userLabel="ThirdView">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="81"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="70.666666666666671"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="P5x-Sk-5dY">
-                                                        <rect key="frame" x="143" y="22.5" width="128" height="36"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="P5x-Sk-5dY">
+                                                        <rect key="frame" x="120.66666666666669" y="14.333333333333314" width="173" height="42"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcp-Kr-a4W">
-                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="36"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="42"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                                                 <color key="tintColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <state key="normal" title="Work">
                                                                     <color key="titleColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -190,8 +190,8 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0f-An-owj">
-                                                                <rect key="frame" x="76" y="0.0" width="52" height="36"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                                <rect key="frame" x="108" y="0.0" width="65" height="42"/>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                                                 <color key="tintColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <state key="normal" title="Break">
                                                                     <color key="titleColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -209,10 +209,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bA-op-rmB" userLabel="FourthView">
-                                                <rect key="frame" x="0.0" y="91" width="414" height="81"/>
+                                                <rect key="frame" x="0.0" y="80.666666666666686" width="414" height="70.666666666666686"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QW-31-kAc">
-                                                        <rect key="frame" x="162.5" y="-6" width="89" height="93.5"/>
+                                                        <rect key="frame" x="162.66666666666666" y="-11.333333333333371" width="89" height="93.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="80"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -224,10 +224,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pY-dD-BuS" userLabel="FifthView">
-                                                <rect key="frame" x="0.0" y="182" width="414" height="81"/>
+                                                <rect key="frame" x="0.0" y="161.33333333333331" width="414" height="70.666666666666686"/>
                                                 <subviews>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aVu-WN-lvz">
-                                                        <rect key="frame" x="57" y="35.5" width="300" height="11"/>
+                                                        <rect key="frame" x="57" y="30.333333333333371" width="300" height="11"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="tintColor" red="0.22352941179999999" green="0.24313725489999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
@@ -244,10 +244,10 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igg-38-ZiW" userLabel="BottomView">
-                                        <rect key="frame" x="0.0" y="545.5" width="414" height="262.5"/>
+                                        <rect key="frame" x="0.0" y="484" width="414" height="232"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="URh-4Y-qL6">
-                                                <rect key="frame" x="57" y="76" width="300" height="110"/>
+                                                <rect key="frame" x="57" y="61" width="300" height="110"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SO5-BA-hlr">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -314,6 +314,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Pomodoro Timer (2)" width="250" height="541"/>
+        <image name="Pomodoro Timer (2)" width="250" height="541.33331298828125"/>
     </resources>
 </document>
