@@ -10,10 +10,12 @@ a simple pomodoro timer develop with swift programming language
 4. utilize AVFoundation module to play sound
 5. pass user input from one screen to another screen app
 
+
 # Version 1.1
 1. Bug Fix (App allow user to continue to another screen without a task)
 2. Refactor Code & update UI
 
-Future Updates
+
+# Future Updates
 
 1. Fix background layout for iPad
