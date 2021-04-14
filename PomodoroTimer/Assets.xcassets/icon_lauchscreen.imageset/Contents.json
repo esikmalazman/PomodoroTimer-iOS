@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "pomdooro_new_icon_lauchscreen.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
