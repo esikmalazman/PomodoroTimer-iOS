@@ -1,4 +1,4 @@
-# pomdoro-timer-iOSApp
+# PomdoroTimer-iOSApp
 
 a simple pomodoro timer develop with swift programming language
 
