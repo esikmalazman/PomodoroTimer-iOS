@@ -1,10 +1,8 @@
+![Pomo](https://user-images.githubusercontent.com/59039044/127081212-8ce3e9e7-deba-404b-a19b-75e3ff7d1b70.png)
+
 # PomdoroTimer-iOSApp
 
 a simple pomodoro timer develop with swift programming language
-
-## App Icon
-![Pomo](https://user-images.githubusercontent.com/59039044/127081212-8ce3e9e7-deba-404b-a19b-75e3ff7d1b70.png)
-
 
 # What I learn from this project
 
