@@ -25,3 +25,4 @@ a simple pomodoro timer develop with swift programming language
 
 1. Roundings
 
+https://user-images.githubusercontent.com/59039044/128592121-cdbda08d-26a5-48dd-a03d-b31ec24781ec.mov
