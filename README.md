@@ -2,7 +2,13 @@
 
 # PomdoroTimer-iOSApp
 
-a simple pomodoro timer develop with swift programming language
+A simple pomodoro timer develop with swift programming language
+
+# Frameworks used
+1. UIKit
+2. AVFoundation
+3. Foundation
+4. XCTest
 
 # What I learn from this project
 
