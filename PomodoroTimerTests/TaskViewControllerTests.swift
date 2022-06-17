@@ -44,15 +44,39 @@ final class TaskViewControllerTests: XCTestCase {
         putViewInViewHeirarchy(sut)
         sut.workTextField.becomeFirstResponder()
         XCTAssertTrue(sut.workTextField.isFirstResponder, "pre-condition")
+        
         ///  Populate task in textfield
         sut.workTextField.text = "Task 1"
-        
         textFieldShouldReturn(sut.workTextField)
         
         XCTAssertFalse(sut.workTextField.isFirstResponder)
     }
     
+    func test_textFieldShouldEndEditing_withNoTask_shouldNotEndEditing() {
+        putViewInViewHeirarchy(sut)
+        sut.workTextField.becomeFirstResponder()
+        XCTAssertTrue(sut.workTextField.isFirstResponder, "pre-condition")
+        
+        let allowEndEditing = textFieldShouldEndEditing(sut.workTextField)
+        
+        XCTAssertEqual(allowEndEditing, false)
+    }
     
+    func test_textFieldShouldEndEditing_withTask_shouldEndEditing() {
+        putViewInViewHeirarchy(sut)
+        sut.workTextField.becomeFirstResponder()
+        XCTAssertTrue(sut.workTextField.isFirstResponder, "pre-condition")
+        
+        sut.workTextField.text = "Task 1"
+        let allowEndEditing = textFieldShouldEndEditing(sut.workTextField)
+        
+        XCTAssertEqual(allowEndEditing, true)
+    }
+    
+}
+
+func textFieldShouldEndEditing(_ textField : UITextField) -> Bool? {
+   return textField.delegate?.textFieldShouldEndEditing?(textField)
 }
 
 @discardableResult
