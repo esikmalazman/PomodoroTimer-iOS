@@ -14,6 +14,7 @@ final class TaskViewControllerTests: XCTestCase {
     
     override func tearDown() {
         sut = nil
+        executeRunLoop()
         super.tearDown()
     }
     
@@ -31,9 +32,8 @@ final class TaskViewControllerTests: XCTestCase {
     /// Test verify if textField is empty keyboard will not dismissed after return button were pressed
     func test_textFieldShouldReturn_withNoTask_shouldNotDismissedKeyboard() {
         putViewInViewHeirarchy(sut)
+        textFieldBecomeFirstResponder(sut.workTextField)
         sut.workTextField.becomeFirstResponder()
-        /// Verify if the textfield has become first response, assert act as precondition
-        XCTAssertTrue(sut.workTextField.isFirstResponder, "pre-condition")
         
         textFieldShouldReturn(sut.workTextField)
         
@@ -42,8 +42,7 @@ final class TaskViewControllerTests: XCTestCase {
     
     func test_textFieldShouldReturn_withTask_shouldDismissedKeyboard() {
         putViewInViewHeirarchy(sut)
-        sut.workTextField.becomeFirstResponder()
-        XCTAssertTrue(sut.workTextField.isFirstResponder, "pre-condition")
+        textFieldBecomeFirstResponder(sut.workTextField)
         
         ///  Populate task in textfield
         sut.workTextField.text = "Task 1"
@@ -54,8 +53,7 @@ final class TaskViewControllerTests: XCTestCase {
     
     func test_textFieldShouldEndEditing_withNoTask_shouldNotEndEditing() {
         putViewInViewHeirarchy(sut)
-        sut.workTextField.becomeFirstResponder()
-        XCTAssertTrue(sut.workTextField.isFirstResponder, "pre-condition")
+        textFieldBecomeFirstResponder(sut.workTextField)
         
         let allowEndEditing = textFieldShouldEndEditing(sut.workTextField)
         
@@ -64,8 +62,7 @@ final class TaskViewControllerTests: XCTestCase {
     
     func test_textFieldShouldEndEditing_withTask_shouldEndEditing() {
         putViewInViewHeirarchy(sut)
-        sut.workTextField.becomeFirstResponder()
-        XCTAssertTrue(sut.workTextField.isFirstResponder, "pre-condition")
+        textFieldBecomeFirstResponder(sut.workTextField)
         
         sut.workTextField.text = "Task 1"
         let allowEndEditing = textFieldShouldEndEditing(sut.workTextField)
@@ -74,17 +71,33 @@ final class TaskViewControllerTests: XCTestCase {
     }
     
 }
+/// Helper to make textField as first responder
+func textFieldBecomeFirstResponder(_ textField : UITextField,
+                                   file : StaticString = #file,
+                                   line : UInt = #line ) {
+    textField.becomeFirstResponder()
+    /// Verify if the textfield has become first response, assert act as precondition
+    XCTAssertTrue(textField.isFirstResponder, "pre-condition: textField is not first responder", file: file, line: line)
+}
 
+/// Helper to active delegate method  textFieldShouldEndEditing(_ textField)
 func textFieldShouldEndEditing(_ textField : UITextField) -> Bool? {
    return textField.delegate?.textFieldShouldEndEditing?(textField)
 }
 
+/// Helper to active delegate method  textFieldShouldReturn(_ textField)
 @discardableResult
 func textFieldShouldReturn(_ textField : UITextField) -> Bool? {
     return textField.delegate?.textFieldShouldReturn?(textField)
 }
 
+/// Helper to add vc into view hierarchy
 func putViewInViewHeirarchy(_ vc : UIViewController) {
     let window = UIWindow()
     window.addSubview(vc.view)
+}
+
+/// Helper to execute registered events in UIKit immediately
+func executeRunLoop() {
+    RunLoop.current.run(until: Date())
 }
